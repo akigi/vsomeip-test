@@ -1,0 +1,360 @@
+root@9d8d4e429b56:/code/examples/build# LD_LIBRARY_PATH=/usr/local/vsomeip/lib VSOMEIP_CONFIGURATION=sample-vsomeip-tcp-client.json VSOMEIP_APPLICATION_NAME=client-sample ./request-sample
+-- [client-sample] -- use_tcp:          0
+-- [client-sample] -- be_quiet:         0
+-- [client-sample] -- cycle:            1000
+-- [client-sample] -- Calling Init
+-- [client-sample] -- SAMPLE_SERVICE_ID:        4660
+-- [client-sample] -- SAMPLE_INSTANCE_ID:       22136
+-- [client-sample] -- SAMPLE_METHOD_ID: 1057
+2023-01-12 04:07:25.866039 [info] Parsed vsomeip configuration in 0ms
+2023-01-12 04:07:25.868286 [info] Using configuration file: "sample-vsomeip-tcp-client.json".
+2023-01-12 04:07:25.877560 [info] Initializing vsomeip application "client-sample".
+2023-01-12 04:07:25.879038 [info] Instantiating routing manager [Host].
+2023-01-12 04:07:25.880764 [info] create_local_server Routing endpoint at /tmp/vsomeip-0
+2023-01-12 04:07:25.886929 [info] Service Discovery enabled. Trying to load module.
+2023-01-12 04:07:25.891762 [info] Service Discovery module loaded.
+2023-01-12 04:07:25.943360 [info] Application(client-sample, 1343) is initialized (11, 100).
+Client settings [protocol=UDP:quiet=false:cycle=1000]
+2023-01-12 04:07:25.968578 [info] Starting vsomeip application "client-sample" (1343) using 2 threads I/O nice 255
+2023-01-12 04:07:25.970798 [info] Watchdog is disabled!
+2023-01-12 04:07:25.982599 [info] io thread id from application: 1343 (client-sample) is: 7f4654ea1ec0 TID: 4864
+2023-01-12 04:07:25.983652 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 04:07:25.989033 [info] Network interface "eth0" state changed: up
+2023-01-12 04:07:25.038195 [info] Route "default route (0.0.0.0/0) if: eth0 gw: 192.168.100.1" state changed: up
+2023-01-12 04:07:25.039065 [info] udp_server_endpoint_impl: SO_RCVBUF is: 212992
+2023-01-12 04:07:25.039638 [info] udp_server_endpoint_impl: SO_RCVBUF (Multicast) is: 212992
+2023-01-12 04:07:25.040154 [info] SOME/IP routing ready.
+2023-01-12 04:07:25.036124 [info] main dispatch thread id from application: 1343 (client-sample) is: 7f4654635700 TID: 4866
+Service [1234.5678] is NOT available.
+Service [1235.5678] is NOT available.
+2023-01-12 04:07:25.041610 [info] REQUEST(1343): [1234.5678:255.4294967295]
+2023-01-12 04:07:25.042654 [info] Listening at /tmp/vsomeip-1343
+2023-01-12 04:07:25.036623 [info] io thread id from application: 1343 (client-sample) is: 7f4652e32700 TID: 4869
+2023-01-12 04:07:25.983858 [info] shutdown thread id from application: 1343 (client-sample) is: 7f4653e34700 TID: 4867
+2023-01-12 04:07:30.055893 [info] Application/Client 0101 is registering.
+2023-01-12 04:07:30.059182 [info] Client [1343] is connecting to [101] at /tmp/vsomeip-101
+2023-01-12 04:07:30.066166 [info] REGISTERED_ACK(0101)
+2023-01-12 04:07:30.083799 [info] OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:07:30.085903 [info] Port configuration missing for [1234.5678]. Service is internal.
+Service [1234.5678] is available.
+Client/Session [1343/0001] sent a request to Service [1234.5678]
+2023-01-12 04:07:30.092621 [info] OFFER(0101): [1235.5678:0.0] (true)
+2023-01-12 04:07:30.094181 [info] Port configuration missing for [1235.5678]. Service is internal.
+Service [1235.5678] is available.
+Received a response from Service [1234.5678] to Client/Session [1343/0001]
+Client/Session [1343/0002] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0002]
+Client/Session [1343/0003] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0003]
+Client/Session [1343/0004] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0004]
+Client/Session [1343/0005] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0005]
+Client/Session [1343/0006] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0006]
+2023-01-12 04:07:35.987330 [info] vSomeIP 3.1.16.1 | (default)
+Client/Session [1343/0007] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0007]
+Client/Session [1343/0008] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0008]
+Client/Session [1343/0009] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0009]
+Client/Session [1343/000a] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/000a]
+Client/Session [1343/000b] sent a request to Service [1234.5678]
+2023-01-12 04:07:40.179745 [info] STOP OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:07:40.184773 [info] STOP OFFER(0101): [1235.5678:0.0] (true)
+Received a response from Service [1234.5678] to Client/Session [1343/000b]
+Service [1234.5678] is NOT available.
+Service [1235.5678] is NOT available.
+2023-01-12 04:07:45.991931 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 04:07:50.278630 [info] OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:07:50.279649 [info] Port configuration missing for [1234.5678]. Service is internal.
+Service [1234.5678] is available.
+2023-01-12 04:07:50.280682 [info] OFFER(0101): [1235.5678:0.0] (true)
+2023-01-12 04:07:50.280964 [info] Port configuration missing for [1235.5678]. Service is internal.
+Service [1235.5678] is available.
+Client/Session [1343/000c] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/000c]
+Client/Session [1343/000d] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/000d]
+Client/Session [1343/000e] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/000e]
+Client/Session [1343/000f] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/000f]
+Client/Session [1343/0010] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0010]
+2023-01-12 04:07:55.995870 [info] vSomeIP 3.1.16.1 | (default)
+Client/Session [1343/0011] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0011]
+Client/Session [1343/0012] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0012]
+Client/Session [1343/0013] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0013]
+Client/Session [1343/0014] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0014]
+Client/Session [1343/0015] sent a request to Service [1234.5678]
+2023-01-12 04:08:00.361060 [info] STOP OFFER(0101): [1234.5678:0.0] (true)
+Service [1234.5678] is NOT available.
+2023-01-12 04:08:00.363309 [info] STOP OFFER(0101): [1235.5678:0.0] (true)
+Service [1235.5678] is NOT available.
+Received a response from Service [1234.5678] to Client/Session [1343/0015]
+2023-01-12 04:08:05.003490 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 04:08:10.428521 [info] OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:08:10.429489 [info] Port configuration missing for [1234.5678]. Service is internal.
+Service [1234.5678] is available.
+Client/Session [1343/0016] sent a request to Service [1234.5678]
+2023-01-12 04:08:10.434333 [info] OFFER(0101): [1235.5678:0.0] (true)
+2023-01-12 04:08:10.436050 [info] Port configuration missing for [1235.5678]. Service is internal.
+Received a response from Service [1234.5678] to Client/Session [1343/0016]
+Service [1235.5678] is available.
+Client/Session [1343/0017] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0017]
+Client/Session [1343/0018] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0018]
+Client/Session [1343/0019] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0019]
+Client/Session [1343/001a] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/001a]
+Client/Session [1343/001b] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/001b]
+2023-01-12 04:08:15.009856 [info] vSomeIP 3.1.16.1 | (default)
+Client/Session [1343/001c] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/001c]
+Client/Session [1343/001d] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/001d]
+Client/Session [1343/001e] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/001e]
+Client/Session [1343/001f] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/001f]
+Client/Session [1343/0020] sent a request to Service [1234.5678]
+2023-01-12 04:08:20.489065 [info] STOP OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:08:20.498460 [info] STOP OFFER(0101): [1235.5678:0.0] (true)
+Received a response from Service [1234.5678] to Client/Session [1343/0020]
+Service [1234.5678] is NOT available.
+Service [1235.5678] is NOT available.
+2023-01-12 04:08:25.014237 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 04:08:30.560250 [info] OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:08:30.561412 [info] Port configuration missing for [1234.5678]. Service is internal.
+Service [1234.5678] is available.
+2023-01-12 04:08:30.562845 [info] OFFER(0101): [1235.5678:0.0] (true)
+2023-01-12 04:08:30.563226 [info] Port configuration missing for [1235.5678]. Service is internal.
+Service [1235.5678] is available.
+Client/Session [1343/0021] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0021]
+Client/Session [1343/0022] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0022]
+Client/Session [1343/0023] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0023]
+Client/Session [1343/0024] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0024]
+Client/Session [1343/0025] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0025]
+2023-01-12 04:08:35.017384 [info] vSomeIP 3.1.16.1 | (default)
+Client/Session [1343/0026] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0026]
+Client/Session [1343/0027] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0027]
+Client/Session [1343/0028] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0028]
+Client/Session [1343/0029] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0029]
+Client/Session [1343/002a] sent a request to Service [1234.5678]
+2023-01-12 04:08:40.677297 [info] STOP OFFER(0101): [1234.5678:0.0] (true)
+Service [1234.5678] is NOT available.
+2023-01-12 04:08:40.680919 [info] STOP OFFER(0101): [1235.5678:0.0] (true)
+Service [1235.5678] is NOT available.
+Received a response from Service [1234.5678] to Client/Session [1343/002a]
+2023-01-12 04:08:45.022218 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 04:08:50.781209 [info] OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:08:50.782228 [info] Port configuration missing for [1234.5678]. Service is internal.
+Service [1234.5678] is available.
+Client/Session [1343/002b] sent a request to Service [1234.5678]
+2023-01-12 04:08:50.790577 [info] OFFER(0101): [1235.5678:0.0] (true)
+2023-01-12 04:08:50.792324 [info] Port configuration missing for [1235.5678]. Service is internal.
+Received a response from Service [1234.5678] to Client/Session [1343/002b]
+Service [1235.5678] is available.
+Client/Session [1343/002c] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/002c]
+Client/Session [1343/002d] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/002d]
+Client/Session [1343/002e] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/002e]
+Client/Session [1343/002f] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/002f]
+Client/Session [1343/0030] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0030]
+2023-01-12 04:08:55.029537 [info] vSomeIP 3.1.16.1 | (default)
+Client/Session [1343/0031] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0031]
+Client/Session [1343/0032] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0032]
+Client/Session [1343/0033] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0033]
+Client/Session [1343/0034] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0034]
+2023-01-12 04:09:00.868690 [info] STOP OFFER(0101): [1234.5678:0.0] (true)
+Service [1234.5678] is NOT available.
+2023-01-12 04:09:00.870549 [info] STOP OFFER(0101): [1235.5678:0.0] (true)
+Service [1235.5678] is NOT available.
+2023-01-12 04:09:05.042076 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 04:09:10.910396 [info] OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:09:10.914860 [info] Port configuration missing for [1234.5678]. Service is internal.
+2023-01-12 04:09:10.916760 [info] OFFER(0101): [1235.5678:0.0] (true)
+2023-01-12 04:09:10.918240 [info] Port configuration missing for [1235.5678]. Service is internal.
+Service [1234.5678] is available.
+Service [1235.5678] is available.
+Client/Session [1343/0035] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0035]
+Client/Session [1343/0036] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0036]
+Client/Session [1343/0037] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0037]
+Client/Session [1343/0038] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0038]
+Client/Session [1343/0039] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0039]
+2023-01-12 04:09:15.046544 [info] vSomeIP 3.1.16.1 | (default)
+Client/Session [1343/003a] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/003a]
+Client/Session [1343/003b] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/003b]
+Client/Session [1343/003c] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/003c]
+Client/Session [1343/003d] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/003d]
+2023-01-12 04:09:20.955017 [info] STOP OFFER(0101): [1234.5678:0.0] (true)
+Service [1234.5678] is NOT available.
+2023-01-12 04:09:20.956803 [info] STOP OFFER(0101): [1235.5678:0.0] (true)
+Service [1235.5678] is NOT available.
+2023-01-12 04:09:25.050078 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 04:09:30.010599 [info] OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:09:30.015340 [info] Port configuration missing for [1234.5678]. Service is internal.
+2023-01-12 04:09:30.017529 [info] OFFER(0101): [1235.5678:0.0] (true)
+2023-01-12 04:09:30.019176 [info] Port configuration missing for [1235.5678]. Service is internal.
+Service [1234.5678] is available.
+Service [1235.5678] is available.
+Client/Session [1343/003e] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/003e]
+Client/Session [1343/003f] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/003f]
+Client/Session [1343/0040] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0040]
+Client/Session [1343/0041] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0041]
+Client/Session [1343/0042] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0042]
+2023-01-12 04:09:35.055012 [info] vSomeIP 3.1.16.1 | (default)
+Client/Session [1343/0043] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0043]
+Client/Session [1343/0044] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0044]
+Client/Session [1343/0045] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0045]
+Client/Session [1343/0046] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0046]
+Client/Session [1343/0047] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0047]
+2023-01-12 04:09:40.037946 [info] STOP OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:09:40.043663 [info] STOP OFFER(0101): [1235.5678:0.0] (true)
+Service [1234.5678] is NOT available.
+Service [1235.5678] is NOT available.
+2023-01-12 04:09:45.058775 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 04:09:50.241639 [info] OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:09:50.242692 [info] Port configuration missing for [1234.5678]. Service is internal.
+Service [1234.5678] is available.
+2023-01-12 04:09:50.243771 [info] OFFER(0101): [1235.5678:0.0] (true)
+2023-01-12 04:09:50.244043 [info] Port configuration missing for [1235.5678]. Service is internal.
+Service [1235.5678] is available.
+Client/Session [1343/0048] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0048]
+Client/Session [1343/0049] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0049]
+Client/Session [1343/004a] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/004a]
+Client/Session [1343/004b] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/004b]
+Client/Session [1343/004c] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/004c]
+2023-01-12 04:09:55.070469 [info] vSomeIP 3.1.16.1 | (default)
+Client/Session [1343/004d] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/004d]
+Client/Session [1343/004e] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/004e]
+Client/Session [1343/004f] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/004f]
+Client/Session [1343/0050] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0050]
+Client/Session [1343/0051] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0051]
+2023-01-12 04:10:00.281689 [info] STOP OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:10:00.288437 [info] STOP OFFER(0101): [1235.5678:0.0] (true)
+Service [1234.5678] is NOT available.
+Service [1235.5678] is NOT available.
+2023-01-12 04:10:05.079348 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 04:10:10.397341 [info] OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:10:10.415080 [info] Port configuration missing for [1234.5678]. Service is internal.
+2023-01-12 04:10:10.418248 [info] OFFER(0101): [1235.5678:0.0] (true)
+2023-01-12 04:10:10.420446 [info] Port configuration missing for [1235.5678]. Service is internal.
+Service [1234.5678] is available.
+Service [1235.5678] is available.
+Client/Session [1343/0052] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0052]
+Client/Session [1343/0053] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0053]
+Client/Session [1343/0054] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0054]
+Client/Session [1343/0055] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0055]
+Client/Session [1343/0056] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0056]
+2023-01-12 04:10:15.088762 [info] vSomeIP 3.1.16.1 | (default)
+Client/Session [1343/0057] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0057]
+Client/Session [1343/0058] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0058]
+Client/Session [1343/0059] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0059]
+Client/Session [1343/005a] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/005a]
+Client/Session [1343/005b] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/005b]
+2023-01-12 04:10:20.450224 [info] STOP OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:10:20.454558 [info] STOP OFFER(0101): [1235.5678:0.0] (true)
+Service [1234.5678] is NOT available.
+Service [1235.5678] is NOT available.
+2023-01-12 04:10:25.093009 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 04:10:30.518925 [info] OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:10:30.535893 [info] Port configuration missing for [1234.5678]. Service is internal.
+2023-01-12 04:10:30.538028 [info] OFFER(0101): [1235.5678:0.0] (true)
+2023-01-12 04:10:30.539908 [info] Port configuration missing for [1235.5678]. Service is internal.
+Service [1234.5678] is available.
+Service [1235.5678] is available.
+Client/Session [1343/005c] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/005c]
+Client/Session [1343/005d] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/005d]
+Client/Session [1343/005e] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/005e]
+Client/Session [1343/005f] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/005f]
+Client/Session [1343/0060] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0060]
+2023-01-12 04:10:35.095386 [info] vSomeIP 3.1.16.1 | (default)
+Client/Session [1343/0061] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0061]
+Client/Session [1343/0062] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0062]
+Client/Session [1343/0063] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0063]
+Client/Session [1343/0064] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0064]
+Client/Session [1343/0065] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0065]
+2023-01-12 04:10:40.583055 [info] STOP OFFER(0101): [1234.5678:0.0] (true)
+2023-01-12 04:10:40.584257 [info] STOP OFFER(0101): [1235.5678:0.0] (true)
+Service [1234.5678] is NOT available.
+Service [1235.5678] is NOT available.
+^C2023-01-12 04:10:43.149339 [info] RELEASE(1343): [1234.5678]
+2023-01-12 04:10:43.801903 [info] Stopping vsomeip application "client-sample" (1343).
+2023-01-12 04:10:43.808496 [info] Client [1343] is closing connection to [101]
