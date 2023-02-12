@@ -12,13 +12,14 @@
   - [3.1. 本リポジトリをクローン](#31-本リポジトリをクローン)
   - [3.2. イメージのビルド](#32-イメージのビルド)
   - [3.3. Dockerコンテナの作成](#33-dockerコンテナの作成)
-- [4. vsomeipサーバー/クライアントのビルド](#4-vsomeipサーバークライアントのビルド)
-- [5. vsomeipサーバー/クライアントの実行](#5-vsomeipサーバークライアントの実行)
-  - [クライアント側](#クライアント側)
-  - [サーバー側](#サーバー側)
-  - [vsomeipサーバー/クライアントの実行結果](#vsomeipサーバークライアントの実行結果)
-  - [クライアント側](#クライアント側-1)
-  - [サーバー側](#サーバー側-1)
+- [4. vsomeipサーバー/クライアントのビルド・実行](#4-vsomeipサーバークライアントのビルド実行)
+  - [4.1. vsomeipサーバー/クライアントのビルド](#41-vsomeipサーバークライアントのビルド)
+  - [4.2. vsomeipサーバー/クライアントの実行](#42-vsomeipサーバークライアントの実行)
+    - [4.2.1. クライアント側](#421-クライアント側)
+    - [4.2.2. サーバー側](#422-サーバー側)
+  - [4.3. vsomeipサーバー/クライアントの実行結果](#43-vsomeipサーバークライアントの実行結果)
+    - [4.3.1. クライアント側](#431-クライアント側)
+    - [4.3.2. サーバー側](#432-サーバー側)
 
 ## 1. 概要
 
@@ -206,7 +207,9 @@ CONTAINER ID   IMAGE                       COMMAND         CREATED        STATUS
 9e7b4a960c9e   akigi/vsomeip-node:latest   "/start.sh"     10 hours ago   Up 10 hours                           node_c
 ```
 
-## 4. vsomeipサーバー/クライアントのビルド
+## 4. vsomeipサーバー/クライアントのビルド・実行
+
+### 4.1. vsomeipサーバー/クライアントのビルド
 
 ```bash
 # コンテナ内に入る（ここではNodeA）
@@ -226,9 +229,9 @@ g++ -o request-sample  ../request-sample.cpp  -I/usr/local/vsomeip/include -L/us
 g++ -o response-sample ../response-sample.cpp -I/usr/local/vsomeip/include -L/usr/local/vsomeip/lib -lvsomeip3 -lpthread
 ```
 
-## 5. vsomeipサーバー/クライアントの実行
+### 4.2. vsomeipサーバー/クライアントの実行
 
-### クライアント側
+#### 4.2.1. クライアント側
 
 ```bash
 # NodeAに入る
@@ -239,7 +242,7 @@ cd /code/examples/build
 LD_LIBRARY_PATH=/usr/local/vsomeip/lib VSOMEIP_CONFIGURATION=vsomeip-udp-client.json VSOMEIP_APPLICATION_NAME=client-sample ./request-sample
 ```
 
-### サーバー側
+#### 4.2.2. サーバー側
 
 ```bash
 # NodeBに入る
@@ -250,9 +253,9 @@ cd /code/examples/build
 LD_LIBRARY_PATH=/usr/local/vsomeip/lib VSOMEIP_CONFIGURATION=vsomeip-udp-service.json VSOMEIP_APPLICATION_NAME=service-sample ./response-sample
 ```
 
-### vsomeipサーバー/クライアントの実行結果
+### 4.3. vsomeipサーバー/クライアントの実行結果
 
-### クライアント側
+#### 4.3.1. クライアント側
 ```log
 -- [client-sample] -- use_tcp:		0
 -- [client-sample] -- be_quiet:		0
@@ -365,7 +368,7 @@ Client/Session [1343/000a] sent a request to Service [1234.5678]
 Service [1234.5678] is NOT available.
 ```
 
-### サーバー側
+#### 4.3.2. サーバー側
 
 ```log
 -- [service-sample] -- Calling init
