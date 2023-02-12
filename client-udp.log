@@ -1,0 +1,263 @@
+-- [client-sample] -- use_tcp:		0
+-- [client-sample] -- be_quiet:		0
+-- [client-sample] -- cycle:		1000
+-- [client-sample] -- Calling Init
+-- [client-sample] -- SAMPLE_SERVICE_ID:	4660
+-- [client-sample] -- SAMPLE_INSTANCE_ID:	22136
+-- [client-sample] -- SAMPLE_METHOD_ID:	1057
+2023-01-12 14:48:00.599932 [info] Parsed vsomeip configuration in 1ms
+2023-01-12 14:48:00.601450 [info] Using configuration file: "vsomeip-udp-client.json".
+2023-01-12 14:48:00.601682 [info] Initializing vsomeip application "client-sample".
+2023-01-12 14:48:00.602345 [info] Instantiating routing manager [Host].
+2023-01-12 14:48:00.603835 [info] create_local_server Routing endpoint at /tmp/vsomeip-0
+2023-01-12 14:48:00.615748 [info] Service Discovery enabled. Trying to load module.
+2023-01-12 14:48:00.623948 [info] Service Discovery module loaded.
+2023-01-12 14:48:00.749998 [info] Application(client-sample, 1343) is initialized (11, 100).
+Client settings [protocol=UDP:quiet=false:cycle=1000]
+2023-01-12 14:48:00.753172 [info] Starting vsomeip application "client-sample" (1343) using 2 threads I/O nice 255
+2023-01-12 14:48:00.760800 [info] Watchdog is disabled!
+2023-01-12 14:48:00.824153 [info] shutdown thread id from application: 1343 (client-sample) is: 7ff4544c6700 TID: 29023
+2023-01-12 14:48:00.828858 [info] main dispatch thread id from application: 1343 (client-sample) is: 7ff454cc7700 TID: 29022
+2023-01-12 14:48:00.831403 [info] io thread id from application: 1343 (client-sample) is: 7ff455533ec0 TID: 29015
+2023-01-12 14:48:00.845359 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 14:48:00.848823 [info] Network interface "eth0" state changed: up
+2023-01-12 14:48:00.849577 [info] Route "default route (0.0.0.0/0) if: eth0 gw: 192.168.100.1" state changed: up
+2023-01-12 14:48:00.852046 [info] udp_server_endpoint_impl: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1235.5678] is NOT available.
+2023-01-12 14:48:00.919117 [info] REQUEST(1343): [1234.5678:255.4294967295]
+2023-01-12 14:48:00.935690 [info] Listening at /tmp/vsomeip-1343
+2023-01-12 14:48:00.919883 [info] io thread id from application: 1343 (client-sample) is: 7ff4534c4700 TID: 29025
+2023-01-12 14:48:00.987707 [debug] Joining to multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:00.988216 [info] udp_server_endpoint_impl: SO_RCVBUF (Multicast) is: 212992
+2023-01-12 14:48:00.988661 [info] SOME/IP routing ready.
+2023-01-12 14:48:00.782345 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is available.
+Client/Session [1343/0001] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0001]
+Received a response from Service [1234.5678] to Client/Session [1343/000f]
+Client/Session [1343/0002] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/0002]
+Service [1235.5678] is available.
+Service [1234.5678] is NOT available.
+Service [1235.5678] is NOT available.
+2023-01-12 14:48:04.305742 [warning] Didn't receive a multicast SD message for 2200ms.
+2023-01-12 14:48:04.306598 [debug] Leaving the multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:04.307053 [debug] Joining to multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:04.307418 [info] udp_server_endpoint_impl: SO_RCVBUF (Multicast) is: 212992
+2023-01-12 14:48:06.375743 [warning] Didn't receive a multicast SD message for 2200ms.
+2023-01-12 14:48:06.376144 [debug] Leaving the multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:06.376468 [debug] Joining to multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:06.376756 [info] udp_server_endpoint_impl: SO_RCVBUF (Multicast) is: 212992
+2023-01-12 14:48:08.415417 [warning] Didn't receive a multicast SD message for 2200ms.
+2023-01-12 14:48:08.415789 [debug] Leaving the multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:08.416077 [debug] Joining to multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:08.416544 [info] udp_server_endpoint_impl: SO_RCVBUF (Multicast) is: 212992
+2023-01-12 14:48:09.178270 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:09.179826 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is available.
+Service [1235.5678] is available.
+Client/Session [1343/0003] sent a request to Service [1234.5678]
+2023-01-12 14:48:10.295314 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:10.295871 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:10.296579 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+2023-01-12 14:48:10.944579 [info] vSomeIP 3.1.16.1 | (default)
+Received a response from Service [1234.5678] to Client/Session [1343/0011]
+Client/Session [1343/0004] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/3628]
+Received a response from Service [1234.5678] to Client/Session [1343/0004]
+2023-01-12 14:48:11.534545 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:11.535159 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:11.535883 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/0005] sent a request to Service [1234.5678]
+2023-01-12 14:48:12.563889 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:12.564824 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:12.565777 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/0006] sent a request to Service [1234.5678]
+2023-01-12 14:48:13.675367 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:13.675821 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:13.676439 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/0007] sent a request to Service [1234.5678]
+2023-01-12 14:48:15.241619 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:15.242156 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:15.243269 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/0008] sent a request to Service [1234.5678]
+2023-01-12 14:48:17.233813 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:17.234699 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:17.235576 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/0009] sent a request to Service [1234.5678]
+2023-01-12 14:48:18.703353 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:18.704130 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:18.704919 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/000a] sent a request to Service [1234.5678]
+2023-01-12 14:48:19.587882 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:19.589035 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+Service [1234.5678] is NOT available.
+Service [1235.5678] is NOT available.
+2023-01-12 14:48:20.725864 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:20.726569 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is available.
+Service [1235.5678] is available.
+Client/Session [1343/000b] sent a request to Service [1234.5678]
+2023-01-12 14:48:20.951321 [info] vSomeIP 3.1.16.1 | (default)
+Service [1235.5678] is NOT available.
+Service [1234.5678] is NOT available.
+2023-01-12 14:48:24.115222 [warning] Didn't receive a multicast SD message for 2200ms.
+2023-01-12 14:48:24.115723 [debug] Leaving the multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:24.116221 [debug] Joining to multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:24.116575 [info] udp_server_endpoint_impl: SO_RCVBUF (Multicast) is: 212992
+2023-01-12 14:48:26.129499 [warning] Didn't receive a multicast SD message for 2200ms.
+2023-01-12 14:48:26.130545 [debug] Leaving the multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:26.131068 [debug] Joining to multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:26.131499 [info] udp_server_endpoint_impl: SO_RCVBUF (Multicast) is: 212992
+2023-01-12 14:48:29.145224 [warning] Didn't receive a multicast SD message for 2200ms.
+2023-01-12 14:48:29.145613 [debug] Leaving the multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:29.146070 [debug] Joining to multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:29.146441 [info] udp_server_endpoint_impl: SO_RCVBUF (Multicast) is: 212992
+2023-01-12 14:48:29.097033 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:29.098430 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is available.
+Service [1235.5678] is available.
+Client/Session [1343/000c] sent a request to Service [1234.5678]
+2023-01-12 14:48:30.161335 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:30.162319 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:30.163338 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+2023-01-12 14:48:30.956432 [info] vSomeIP 3.1.16.1 | (default)
+Client/Session [1343/000d] sent a request to Service [1234.5678]
+2023-01-12 14:48:31.227504 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:31.228761 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:31.229861 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/000e] sent a request to Service [1234.5678]
+2023-01-12 14:48:32.541550 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:32.542674 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:32.543762 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/000f] sent a request to Service [1234.5678]
+2023-01-12 14:48:34.746084 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:34.750378 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:34.758440 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/0010] sent a request to Service [1234.5678]
+2023-01-12 14:48:35.736459 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:35.737071 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:35.737819 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/0011] sent a request to Service [1234.5678]
+2023-01-12 14:48:37.449015 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:37.449543 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:37.450215 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/0012] sent a request to Service [1234.5678]
+2023-01-12 14:48:39.475948 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:39.476885 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:39.477791 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/0013] sent a request to Service [1234.5678]
+2023-01-12 14:48:39.567492 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:39.568347 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+Service [1234.5678] is NOT available.
+Service [1235.5678] is NOT available.
+2023-01-12 14:48:39.577104 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+2023-01-12 14:48:40.150272 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:40.151715 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is available.
+Service [1235.5678] is available.
+2023-01-12 14:48:40.063674 [info] vSomeIP 3.1.16.1 | (default)
+Client/Session [1343/0014] sent a request to Service [1234.5678]
+Service [1234.5678] is NOT available.
+Service [1235.5678] is NOT available.
+2023-01-12 14:48:44.109872 [warning] Didn't receive a multicast SD message for 2200ms.
+2023-01-12 14:48:44.110858 [debug] Leaving the multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:44.111371 [debug] Joining to multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:44.111989 [info] udp_server_endpoint_impl: SO_RCVBUF (Multicast) is: 212992
+2023-01-12 14:48:46.119668 [warning] Didn't receive a multicast SD message for 2200ms.
+2023-01-12 14:48:46.120488 [debug] Leaving the multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:46.120950 [debug] Joining to multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:46.121327 [info] udp_server_endpoint_impl: SO_RCVBUF (Multicast) is: 212992
+2023-01-12 14:48:49.148188 [warning] Didn't receive a multicast SD message for 2200ms.
+2023-01-12 14:48:49.148576 [debug] Leaving the multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:49.148855 [debug] Joining to multicast group 224.244.224.245 from 192.168.100.2
+2023-01-12 14:48:49.149123 [info] udp_server_endpoint_impl: SO_RCVBUF (Multicast) is: 212992
+2023-01-12 14:48:50.854552 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:50.855300 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is available.
+Service [1235.5678] is available.
+Client/Session [1343/0015] sent a request to Service [1234.5678]
+2023-01-12 14:48:50.096977 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 14:48:50.964722 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:50.965221 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:50.965914 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/0016] sent a request to Service [1234.5678]
+Received a response from Service [1234.5678] to Client/Session [1343/363d]
+Received a response from Service [1234.5678] to Client/Session [1343/0016]
+2023-01-12 14:48:51.954836 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:51.955992 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:51.957068 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/0017] sent a request to Service [1234.5678]
+2023-01-12 14:48:52.421415 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:52.422354 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:52.423491 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/0018] sent a request to Service [1234.5678]
+2023-01-12 14:48:54.568341 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:54.570229 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:54.574194 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/0019] sent a request to Service [1234.5678]
+2023-01-12 14:48:55.813100 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:55.813657 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:55.814357 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/001a] sent a request to Service [1234.5678]
+2023-01-12 14:48:57.834220 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:57.835093 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:57.835963 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/001b] sent a request to Service [1234.5678]
+2023-01-12 14:48:59.880229 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:48:59.881451 [info] expire_services for address: 192.168.100.3 : delete service/instance 1234.5678 port [0,0] reliability=false
+2023-01-12 14:48:59.882525 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is NOT available.
+Service [1234.5678] is available.
+Client/Session [1343/001c] sent a request to Service [1234.5678]
+Service [1234.5678] is NOT available.
+Service [1235.5678] is NOT available.
+2023-01-12 14:49:00.919336 [info] Reboot detected: IP=192.168.100.3
+2023-01-12 14:49:00.939157 [info] udp_client_endpoint_impl::connect: SO_RCVBUF is: 212992
+Service [1234.5678] is available.
+Service [1235.5678] is available.
+2023-01-12 14:49:00.149819 [info] vSomeIP 3.1.16.1 | (default)
+Client/Session [1343/001d] sent a request to Service [1234.5678]
+Service [1234.5678] is NOT available.
+Service [1235.5678] is NOT available.

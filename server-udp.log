@@ -1,0 +1,62 @@
+-- [service-sample] -- Calling init
+-- [service-sample] -- SAMPLE_SERVICE_ID:	4660
+-- [service-sample] -- SAMPLE_INSTANCE_ID:	22136
+-- [service-sample] -- SAMPLE_METHOD_ID:	1057
+-- [service-sample] -- use_static_routing_:	0
+2023-01-12 14:48:09.129103 [warning] Reliability type for event [1234.5678.8777] was not configured Using : RT_UNRELIABLE
+2023-01-12 14:48:09.129787 [warning] Reliability type for event [1234.5678.8778] was not configured Using : RT_UNRELIABLE
+2023-01-12 14:48:09.129840 [warning] Reliability type for event [1234.5678.8779] was not configured Using : RT_UNRELIABLE
+2023-01-12 14:48:09.130533 [info] Parsed vsomeip configuration in 0ms
+2023-01-12 14:48:09.130626 [info] Using configuration file: "vsomeip-udp-service.json".
+2023-01-12 14:48:09.130732 [info] Initializing vsomeip application "service-sample".
+2023-01-12 14:48:09.130910 [info] Instantiating routing manager [Host].
+2023-01-12 14:48:09.131427 [info] create_local_server Routing endpoint at /tmp/vsomeip-0
+2023-01-12 14:48:09.132183 [info] Service Discovery enabled. Trying to load module.
+2023-01-12 14:48:09.134563 [info] Service Discovery module loaded.
+2023-01-12 14:48:09.171706 [info] Application(service-sample, 1277) is initialized (11, 100).
+Static routing OFF
+2023-01-12 14:48:09.172447 [info] Starting vsomeip application "service-sample" (1277) using 2 threads I/O nice 255
+2023-01-12 14:48:09.174943 [info] Watchdog is disabled!
+2023-01-12 14:48:09.177518 [info] io thread id from application: 1277 (service-sample) is: 7f7c39cdcec0 TID: 29033
+2023-01-12 14:48:09.178300 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 14:48:09.182603 [info] Network interface "eth0" state changed: up
+2023-01-12 14:48:09.183126 [info] Route "default route (0.0.0.0/0) if: eth0 gw: 192.168.100.1" state changed: up
+2023-01-12 14:48:09.183668 [info] udp_server_endpoint_impl: SO_RCVBUF is: 212992
+2023-01-12 14:48:09.184102 [debug] Joining to multicast group 224.244.224.245 from 192.168.100.3
+2023-01-12 14:48:09.184370 [info] udp_server_endpoint_impl: SO_RCVBUF (Multicast) is: 212992
+2023-01-12 14:48:09.184602 [info] SOME/IP routing ready.
+2023-01-12 14:48:09.191515 [info] shutdown thread id from application: 1277 (service-sample) is: 7f7c38c6f700 TID: 29040
+2023-01-12 14:48:09.195166 [info] io thread id from application: 1277 (service-sample) is: 7f7c37c6d700 TID: 29042
+2023-01-12 14:48:09.196335 [info] main dispatch thread id from application: 1277 (service-sample) is: 7f7c39470700 TID: 29039
+Application service-sample is registered.
+-- [service-sample] -- offer
+2023-01-12 14:48:09.197766 [info] OFFER(1277): [1234.5678:0.0] (true)
+2023-01-12 14:48:09.198774 [info] udp_server_endpoint_impl: SO_RCVBUF is: 212992
+2023-01-12 14:48:09.208137 [info] Listening at /tmp/vsomeip-1277
+2023-01-12 14:48:09.209356 [info] OFFER(1277): [1235.5678:0.0] (true)
+Received a message with Client/Session [1343/0010]
+Received a message with Client/Session [1343/3627]
+Received a message with Client/Session [1343/0003]
+2023-01-12 14:48:19.250281 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 14:48:19.548940 [info] STOP OFFER(1277): [1234.5678:0.0] (true)
+2023-01-12 14:48:19.549702 [info] STOP OFFER(1277): [1235.5678:0.0] (true)
+2023-01-12 14:48:29.317149 [info] vSomeIP 3.1.16.1 | (default)
+-- [service-sample] -- offer
+2023-01-12 14:48:29.169811 [info] OFFER(1277): [1234.5678:0.0] (true)
+2023-01-12 14:48:29.170717 [info] udp_server_endpoint_impl: SO_RCVBUF is: 212992
+2023-01-12 14:48:29.171300 [info] OFFER(1277): [1235.5678:0.0] (true)
+Received a message with Client/Session [1343/000c]
+Received a message with Client/Session [1343/3632]
+2023-01-12 14:48:39.329587 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 14:48:39.561153 [info] STOP OFFER(1277): [1234.5678:0.0] (true)
+2023-01-12 14:48:39.561722 [info] STOP OFFER(1277): [1235.5678:0.0] (true)
+2023-01-12 14:48:49.331006 [info] vSomeIP 3.1.16.1 | (default)
+-- [service-sample] -- offer
+2023-01-12 14:48:49.934575 [info] OFFER(1277): [1234.5678:0.0] (true)
+2023-01-12 14:48:49.935673 [info] udp_server_endpoint_impl: SO_RCVBUF is: 212992
+2023-01-12 14:48:49.935973 [info] OFFER(1277): [1235.5678:0.0] (true)
+Received a message with Client/Session [1343/0015]
+Received a message with Client/Session [1343/363c]
+2023-01-12 14:48:59.355074 [info] vSomeIP 3.1.16.1 | (default)
+2023-01-12 14:48:59.652048 [info] STOP OFFER(1277): [1234.5678:0.0] (true)
+2023-01-12 14:48:59.652810 [info] STOP OFFER(1277): [1235.5678:0.0] (true)

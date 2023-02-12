@@ -5,11 +5,14 @@ services:
     image: akigi/vsomeip-node:latest
     restart: always
     container_name: node_a
+    privileged: true
     volumes:
       - ./code:/code
     networks:
       node_AB_net:
         ipv4_address: 192.168.100.2
+    ports:
+      - '10001:22'
 
   NodeB:
     image: akigi/vsomeip-node:latest
@@ -22,6 +25,8 @@ services:
         ipv4_address: 192.168.100.3
       node_BC_net:
         ipv4_address: 192.168.200.3
+    ports:
+      - '10002:22'
 
   NodeC:
     image: akigi/vsomeip-node:latest
@@ -32,6 +37,8 @@ services:
     networks:
       node_BC_net:
         ipv4_address: 192.168.200.2
+    ports:
+      - '10003:22'
 
 networks:
   node_AB_net:

@@ -14,9 +14,9 @@ RUN    apt-get update \
     && apt-get upgrade -y \
     && apt-get install -y tzdata gcc build-essential cmake make wget libtool unzip net-tools \
                           libboost-system1.71-dev libboost-thread1.71-dev libboost-log1.71-dev \
+                          iproute2 iputils-ping net-tools tcpdump \
     && cat /usr/share/zoneinfo/${TZ} > /etc/localtime \
-    && dpkg-reconfigure tzdata \
-    && iproute2 iputils-ping net-tools
+    && dpkg-reconfigure tzdata
 
 RUN    wget -O vsomeip.zip https://github.com/GENIVI/vsomeip/archive/${VSOMIP_VERSION}.zip \
     && unzip vsomeip.zip \
