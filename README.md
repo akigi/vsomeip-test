@@ -8,6 +8,11 @@
   - [2.4. Ubuntuに各種パッケージをインストールする](#24-ubuntuに各種パッケージをインストールする)
   - [2.5. UbuntuにDockerをインストール](#25-ubuntuにdockerをインストール)
   - [2.6. UbuntuにDocker Composeをインストール](#26-ubuntuにdocker-composeをインストール)
+  - [2.7. UbuntuにWireshark 3.6.11をインストール](#27-ubuntuにwireshark-3611をインストール)
+    - [2.7.1. Wiresharkに必要なパッケージのインストール](#271-wiresharkに必要なパッケージのインストール)
+    - [2.7.2. Wireshark 3.6.11のソースコードの入手](#272-wireshark-3611のソースコードの入手)
+    - [2.7.3. ソースコードのビルド](#273-ソースコードのビルド)
+    - [2.7.4. SOME/IPパケットキャプチャの有効化](#274-someipパケットキャプチャの有効化)
 - [3. Dockerコンテナの作成](#3-dockerコンテナの作成)
   - [3.1. 本リポジトリをクローン](#31-本リポジトリをクローン)
   - [3.2. イメージのビルド](#32-イメージのビルド)
@@ -136,6 +141,93 @@ sudo apt-get install docker-compose-plugin
 sudo docker compose version
 # Docker Compose version vN.N.N
 ```
+
+### 2.7. UbuntuにWireshark 3.6.11をインストール
+
+#### 2.7.1. Wiresharkに必要なパッケージのインストール
+
+```bash
+# 1. KEEP UBUNTU OR DEBIAN 's apt-cache UP TO DATE
+sudo apt-get update
+
+export DEBIAN_FRONTEND=noninteractive
+ln -fs /usr/share/zoneinfo/$(curl http://ip-api.com/line?fields=timezone) /etc/localtime
+sudo apt-get install -y tzdata
+
+# 2. INSTALL THE DEPENDENCIES
+sudo apt-get install -y build-essential git cmake 
+
+# CMAKE3
+sudo apt-get install -y cmake3
+
+# GUI
+sudo apt-get install -y qttools5-dev qttools5-dev-tools libqt5svg5-dev qtmultimedia5-dev
+sudo apt-get install -y qt6-base-dev qt6-multimedia-dev qt6-tools-dev qt6-tools-dev-tools qt6-l10n-tools libqt6core5compat6-dev
+
+# PCAP
+sudo apt-get install -y libpcap-dev
+
+# Dev file (On Ubuntu 20.04)
+sudo apt-get install -y libc-ares-dev
+
+# CRYPT
+sudo apt-get install -y libgcrypt20-dev
+
+# GLIB2
+sudo apt-get install -y libglib2.0-dev
+
+# LEX & YACC
+sudo apt-get install -y flex bison
+
+# PCRE2 (On Ubuntu 18.04)
+sudo apt-get install -y libpcre2-dev
+
+# HTTP/2 protocol (Ubuntu >= 16.04)
+sudo apt-get install -y libnghttp2-dev
+
+# Ninjaのインストール
+sudo apt-get install ninja-build
+```
+
+> **Note**
+>
+> Ref: [syneart/build_wireshark.sh](https://gist.github.com/syneart/2d30c075c140624b1e150c8ea318a978)
+
+#### 2.7.2. Wireshark 3.6.11のソースコードの入手
+
+[https://www.wireshark.org/download.html](https://www.wireshark.org/download.html)から直接ダウンロードする。
+
+または、下記コマンドからダウンロードする。
+
+```bash
+wget https://1.as.dl.wireshark.org/src/wireshark-3.6.11.tar.xz
+```
+
+#### 2.7.3. ソースコードのビルド
+
+```bash
+# tar.xzの解凍
+tar -xf wireshark-3.6.11.tar.xz
+
+# build
+## cmake
+cd wireshark-3.6.11
+mkdir build
+cd build
+cmake -G Ninja ..
+
+## ninja
+ninja
+
+# install
+sudo ninja install
+```
+
+#### 2.7.4. SOME/IPパケットキャプチャの有効化
+
+![](pic/wireshark-enable-protocols.png)
+
+![](pic/wireshark-enable-protocols-someip.png)
 
 ## 3. Dockerコンテナの作成
 
